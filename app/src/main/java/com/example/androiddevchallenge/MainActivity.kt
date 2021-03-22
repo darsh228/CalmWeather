@@ -59,7 +59,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
-
 class MainActivity : AppCompatActivity() {
 
     var wheatheModellist: ArrayList<WheatheModel> = arrayListOf()
@@ -68,7 +67,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
 
             val model1 = WheatheModel(
                 "21°",
@@ -476,7 +474,6 @@ fun Toptemprature(img: Painter, temp: String) {
     }
 }
 
-
 @Preview("Light Theme", widthDp = 360, heightDp = 640)
 @Composable
 fun LightPreview() {
@@ -575,7 +572,6 @@ fun DarkPreview() {
     wheatheModellist = arrayListOf()
     wheatheModelDayWiselist = arrayListOf()
 
-
     val model1 = WheatheModel(
         "21°",
         "08:00 Am",
@@ -653,4 +649,3 @@ fun DarkPreview() {
         MyApp(wheatheModellist, wheatheModelDayWiselist)
     }
 }
-
