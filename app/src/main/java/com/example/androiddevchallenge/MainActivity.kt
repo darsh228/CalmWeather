@@ -275,6 +275,7 @@ fun MyApp(
                         .merge(TextStyle(fontSize = 20.sp)),
                     modifier = Modifier
                         .padding(3.dp)
+                        .padding(start = 10.dp)
                         .fillMaxWidth(),
                     color = MaterialTheme.colors.secondary,
                     fontWeight = FontWeight(600),
